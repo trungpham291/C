@@ -9,4 +9,6 @@ add_executable(Code main.c
         "demo 1/bai 3.c"
         "demo 1/bai 4.c"
         "demo 1/bai 5.c"
+        "demo 1/bai 6.c"
+        "demo 1/bai 7.c"
 )

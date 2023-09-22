@@ -1,6 +1,6 @@
 #include <stdio.h>
-//int main2()
-int main()
+int main2()
+//int main()
 {
     int productcode;
     float orderamount, rate = 0.0 ;

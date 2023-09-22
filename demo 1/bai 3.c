@@ -2,10 +2,10 @@
 int main3()
 //int main()
 {
-    int basic;
+    int a;
     printf("\n Please enter your basic:" );
-    scanf("%d",&basic);
-    switch (basic)
+    scanf("%d",&a);
+    switch (a)
     {
         case 200 : printf("\n Bonus is dollar %d\n", 50);
             break;
