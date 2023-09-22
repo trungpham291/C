@@ -2,15 +2,20 @@
 int main3()
 //int main()
 {
-    int a;
-    float d= 123.123456;
-    printf("float 123.123456: %e", d);
-    char fullname[100];
-    gets(fullname);
-    printf("fullname: %s\n", fullname);
-    char ch, name[40];
-    printf("plesae enter the data\n");
-    scanf("%d %f %c %s", &a,&d,&ch,name);
-    printf("\n The values accepted are: %d,%f,%c,%s", a,d,ch,name);
-    return 0;
+    int basic;
+    printf("\n Please enter your basic:" );
+    scanf("%d",&basic);
+    switch (basic)
+    {
+        case 200 : printf("\n Bonus is dollar %d\n", 50);
+            break;
+        case 300 : printf("\n Bonus is dollar %d\n", 125);
+            break;
+        case 400 : printf("\n Bonus is dollar %d\n", 140);
+            break;
+        case 500 : printf("\n Bonus is dollar %d\n", 175);
+            break;
+        default : printf("\n Invalid entry");
+            break;
+    }
 }

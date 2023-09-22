@@ -1,14 +1,13 @@
 # ninja log v5
-2	81	7164845464037770	CMakeFiles/Code.dir/main.c.obj	63b9438a22ac4602
-81	184	7164896901101351	Code.exe	52e58fc4cbe5f21e
-1	76	7164895327001340	CMakeFiles/Code.dir/demo_1/bai_2.c.obj	e74b9365d6d22f72
-1	83	7164881893909495	CMakeFiles/Code.dir/demo_1/bai_1.c.obj	86d6e5fbbe06767e
-2	80	7164896900108831	CMakeFiles/Code.dir/demo_1/bai_3.c.obj	7e2b1600ad2a6626
-8	98	7164903543506556	CMakeFiles/Code.dir/demo_1/bai_3.c.obj	7e2b1600ad2a6626
-2	51	7164904002441838	CMakeFiles/Code.dir/demo_1/bai_4.c.obj	41d161e6d868203c
-52	172	7164904003601742	Code.exe	38fe636713db1edf
-2	112	7164909687745796	CMakeFiles/Code.dir/demo_1/bai_4.c.obj	41d161e6d868203c
-3	77	7164910288225128	CMakeFiles/Code.dir/demo_1/bai_3.c.obj	7e2b1600ad2a6626
-78	173	7164910289132805	Code.exe	38fe636713db1edf
-6	362	7170732737030280	CMakeFiles/Code.dir/demo_1/bai_4.c.obj	41d161e6d868203c
-363	727	7170732740632431	Code.exe	38fe636713db1edf
+3	76	7170853798181000	CMakeFiles/Code.dir/main.c.obj	63b9438a22ac4602
+76	187	7170853799248175	Code.exe	38fe636713db1edf
+2	124	7170851471979372	CMakeFiles/Code.dir/demo_1/bai_2.c.obj	e74b9365d6d22f72
+2	83	7170853492107192	CMakeFiles/Code.dir/demo_1/bai_1.c.obj	86d6e5fbbe06767e
+27	124	7170850593279138	CMakeFiles/Code.dir/demo_1/bai_3.c.obj	7e2b1600ad2a6626
+19	122	7170850593259189	CMakeFiles/Code.dir/demo_1/bai_4.c.obj	41d161e6d868203c
+7	75	7170859614703249	CMakeFiles/Code.dir/demo_1/bai_4.c.obj	41d161e6d868203c
+1	76	7170859614713229	CMakeFiles/Code.dir/demo_1/bai_5.c.obj	22f0e5f449b9a8a8
+76	166	7170859615578785	Code.exe	6122447cdd12bd0b
+11	82	7170863657275160	CMakeFiles/Code.dir/demo_1/bai_5.c.obj	22f0e5f449b9a8a8
+3	83	7170863657295092	CMakeFiles/Code.dir/demo_1/bai_2.c.obj	e74b9365d6d22f72
+84	170	7170863658147994	Code.exe	6122447cdd12bd0b
