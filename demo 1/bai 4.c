@@ -8,5 +8,5 @@ int main()
     if (res == 0)
         printf("la so chan");
     else
-        printf("La so le");
+        printf("La so le 1245");
 }
