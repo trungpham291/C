@@ -2,13 +2,18 @@
 int main7()
 //int main()
 {
-    int a, c;
-    printf("Enter a number : ");
+    float a,b, bmi;
+    printf("Nhap so can nang: ");
     scanf("%d", &a);
-    c = a % 2;
-    if (c == 0)
-        printf("The number is Even : ");
+    printf("Nhap so chieu cao: ");
+    scanf("%f", &b);
+    bmi = a / b * b ;
+    if (bmi<18)
+        printf("\n Gay", bmi);
+    else if ( bmi < 24.9)
+        printf("\n BINH THUONG", bmi);
+    else if( bmi < 29.9)
+        printf("\n BEO", bmi);
     else
-        printf("The number is odd:  ");
-
+        printf("\n BEO PHI", bmi);
 }

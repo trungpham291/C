@@ -1,27 +1,53 @@
 #include <stdio.h>
+
+#define COFFEE_PRICE 2.5
+#define TEA_PRICE 2.0
+#define SMOOTHIE_PRICE 3.0
 int main1()
 //int main()
 {
-    char ch;
+    int numCoffees =0, numTeas = 0, numSmoothies = 0;
+    float totalCost;
+    char choice;
 
-    printf ("\nEnter a lower cased alphabet (a - z) :" );
-    scanf("%c", &ch);
-    if(ch < 'a' || ch > 'z')
-        printf("\nCharacter not a lower cased alphabet");
-    else
-        switch(ch) {
-            case 'a' :
-            case 'e' :
-            case 'i' :
-            case 'o' :
-            case 'u' :
-                printf("\nCharacter is a vowel");
+    printf("welcome to coffee shop! \n");
+
+    do{
+        printf("\n-----MENU------\n");
+        printf("1. Coffee ($%.2f)\n", COFFEE_PRICE);
+        printf("2. Tea ($%.2f)\n", TEA_PRICE);
+        printf("3. Smoothie ($%.2f)\n", SMOOTHIE_PRICE);
+        printf("4. Quit\n");
+
+        printf("Enter your choice (1-4): ");
+        scanf("%c", &choice);
+
+        switch (choice) {
+            case '1':
+                numCoffees++;
                 break;
-            case 'z' :
-                printf("\nLast Alphabet (z) was entered");
+            case '2':
+                numTeas++;
                 break;
-            default :
-                printf("\nCharacter is a consonant");
+            case '3':
+                numSmoothies++;
                 break;
+            case '4':
+                break;
+            default:
+                printf("Invalid choice. Please try again. \n");
         }
+
+    }while (choice != '4');
+
+    totalCost = (numCoffees * COFFEE_PRICE) + (numTeas * TEA_PRICE) +(numSmoothies * SMOOTHIE_PRICE);
+
+    printf("\n Order Details: \n");
+    printf("Coffees: %d\n", numCoffees);
+    printf("Teas: %d\n", numTeas);
+    printf("Smoothies: %d\n", numSmoothies);
+    printf("Total Cost: $%.2f\n", totalCost);
+
+    return 0;
+
 }

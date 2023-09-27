@@ -1,18 +1,20 @@
 #include <stdio.h>
-int main4()
-//int main()
-{
-    int x;
-    x = 0;
 
-    printf("Enter Choice (1 - 3) :");
-    scanf("%d", &x);
-    if (x == 1)
-        printf ("\nChoice is 1");
-    else if (x == 2)
-        printf ("\nChoice is 2");
-    else if (x == 3)
-        printf ("\nChoice is 3");
-    else
-    printf ("\nInvalid Choice");
+#define DEN 2
+#define NAU 2.5
+#define BACSIU 3
+
+int main()
+{
+    int numDen = 0, numNau = 0, numBacsiu =0;
+    float totalBill;
+    char choice;
+
+    printf("\n------------MENU-----------\n");
+    printf("1. DEN ($%.2f)\n", DEN);
+    printf("2. NAU ($%.2f)\n",NAU);
+    printf("3. BACSIU ($%.2f)\n", BACSIU);
+    printf("4. ")
+
+
 }
