@@ -15,4 +15,18 @@ int main()
     {
         printf("%d \n", arr[i]);
     }
+    int max = arr[0];
+    for (i=1; i<7; i++)
+    {
+       if (max < arr[i])  // i chay lan luot i<3
+            max = arr[i]; // max se gan so lon nhat max=3
+    }
+    int min = arr[0];
+    for(i=1; i<7; i++)
+    {
+        if (min > arr[i])
+            min = arr[i];
+    }
+    printf("MAX :%d\n", max);
+    printf("MIN :%d\n", min);
 }
