@@ -1,20 +1,38 @@
 #include <stdio.h>
-
-#define DEN 2
-#define NAU 2.5
-#define BACSIU 3
-
-int main()
+int main4()
+//int main()
 {
-    int numDen = 0, numNau = 0, numBacsiu =0;
-    float totalBill;
-    char choice;
+    int arr[10];
+    arr[0] = 1;
+    arr[1] = 2;
+    arr[2] = 3;
+    arr[3] = 4;
+    arr[4] = 5;
+    arr[5] = 6;
+    arr[6] = 7;
+    arr[7] = 8;
+    arr[8] = 9;
+    arr[9] = 10;
+    int i,a;
+    int found = 0;
 
-    printf("\n------------MENU-----------\n");
-    printf("1. DEN ($%.2f)\n", DEN);
-    printf("2. NAU ($%.2f)\n",NAU);
-    printf("3. BACSIU ($%.2f)\n", BACSIU);
-    printf("4. ")
+    printf("Cac Phan Tu cua mang bao gom: ");
+    for (i=1; i< 11; i++)
+    {
+        printf("%d\t", i);
+    }
+    printf("\n Nhap phan tu ban muon tim: ");
+    scanf("%d", &a);
 
-
+    for (i=1; i<11; i++)
+    {
+        if (arr[i] == a){
+            printf("Phan tu %d duoc tim thay tai vi tri %d\n", a,i);
+            found = 1;
+        }
+    }
+    if (!found) {
+        printf("Phan tu %d khong co trong mang.\n",a);
+    }
+    return 0;
 }
