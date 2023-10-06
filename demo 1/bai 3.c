@@ -1,30 +1,39 @@
 #include <stdio.h>
-int main3()
+int performOperation(int num1, int num2, char choice);
+int performOperation(int num1,int num2, char choice){
+    int result;
+    switch(choice){
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            result = num1 / num2;
+            break;
+        default:
+            printf("Khong phu hop\n");
+            result = 0;
 
-//int main()
-{
-    int count = 0 ;
-    float total = 0 ;
-    char choice;
-    char subject[50];
-    float score;
-
-    do{
-        printf("Nhap ten mon hoc: ");
-        scanf("%s", subject);
-        printf("Nhap diem: ");
-        scanf("%f", &score);
-        total += score; // cong don
-        count++; // dung de xem co tong cong bao mon de chia (23)
-        printf("Ban co muon tiep tuc hay khong? : ");
-        scanf(" %c", &choice);
-    }while (choice == 'y' || choice == 'Y');
-
-    if (count > 0) {
-        double average = total / count ;
-        printf("Diem trung binh cua ban la : %.2lf\n", average);
-    }else {
-        printf("Khong co mon hoc nao duoc nhap diem. \n");
     }
-    return 0;
+    return result;
+}
+
+int main()
+{
+    int num1, num2;
+    char choice;
+    printf("Enter frist number: ");
+    scanf("%d", &num1);
+    printf("Enter an operator (+, -, *, /): ");
+    scanf(" %c", &choice);
+    printf("Enter second number: ");
+    scanf(" %d", &num2);
+
+    int result = performOperation(num1, num2, choice);
+    printf("Result : %d", result);
 }
