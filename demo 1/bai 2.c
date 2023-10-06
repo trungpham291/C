@@ -1,24 +1,21 @@
 #include <stdio.h>
-int main2()
-//int main()
+
+int main()
 {
-    char subject[50] ;
-    char choice;
-    float diem =0;
-    do{
-        printf("Nhap ten mon hoc: ");
-        scanf("%s", &subject);
-        printf("Nhap Diem: ");
-        scanf("%f", &diem);
+    int n, i;
+    int count = 0;
+    printf("Nhap so luong sinh vien: ");
+    scanf("%d", &n);
+    float marks[n];
 
-        printf("Ban co muon tiep tuc khong (y/n): ");
-        scanf(" %c", &choice);
-
-
-    }while ( choice != 'n' );
-
-
+    for ( i =0; i < n; i++)
+    {
+        printf("Nhap diem cho sinh vien%d :", i +1);
+        scanf("%f", &marks[i]);
+        if(marks[i]<5)
+            count++;
+    }
+    printf("So luong sinh vien da truot %d", count);
 
 
-    return 1;
 }
