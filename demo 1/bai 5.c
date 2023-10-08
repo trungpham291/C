@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int main()
+int main5()
+//int main()
 {
     int n;
     int arr[n];
@@ -21,5 +21,6 @@ int main()
             printf("%d ", arr[i]);
         }
     }
+    return 0;
 
 }

@@ -22,8 +22,8 @@ int performOperation(int num1,int num2, char choice){
     }
     return result;
 }
-
-int main()
+int main3()
+//int main()
 {
     int num1, num2;
     char choice;
