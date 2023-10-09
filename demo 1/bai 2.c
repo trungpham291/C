@@ -1,31 +1,34 @@
 #include <stdio.h>
 
-int add(int a, int b);
-int main2()
-//int main()
+float Total(int soluong, float dongia);
+float Total(int soluong, float dongia)
 {
-    int result = add(5,3);
-    printf("Tong la: %d", result);
 
-    int result2 = add(4,3);
-    printf("Tong la: %d", result2);
+    float tongtien = soluong * dongia;
+    float tongtienthue10 = tongtien * 0.1;
+    if(tongtien >= 100){
+        tongtien *= 0.98;
+    }else if(tongtien >= 200) {
+        tongtien *= 0.95;
+    }
+    return tongtien + tongtienthue10;
+}
 
-    int num1, num2;
-    printf("Nhap so hang thu nhat: ");
-    scanf("%d", &num1);
-    printf("Nhap so hang thu hai: ");
-    scanf("%d", &num2);
 
-    int result3 = add(num1, num2);
-    printf("Tong la: %d\n", result3);
+
+int main()
+{
+    int soluong;
+    float dongia;
+
+    printf("So luong : ");
+    scanf("%d", &soluong);
+    printf("Don gia: ");
+    scanf("%f", &dongia);
+
+    float totalPrice = Total(soluong, dongia);
+    printf("Tong tien kem thue la: %.2f", totalPrice);
     return 0;
 
 }
-int add(int a, int b){
-    printf("\n\n Thuc hien tinh cong: \n");
-    printf("So hang a = %d\n",a );
-    printf("So hang b =%d\n", b);
-    return a+b;
-}
-
 

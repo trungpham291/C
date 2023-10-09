@@ -17,8 +17,8 @@ char xeploai(int mark)
     }
     return grade;
 }
-
-int main()
+int main1()
+//int main()
 {
     int mark;
     printf("Enter marks: ");

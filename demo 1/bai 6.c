@@ -2,42 +2,22 @@
 int main6()
 //int main()
 {
-    char ch;
-    printf("\n Nhap mot ki tu: ");
-    scanf("%c", &ch);
-    switch(ch)
-    {
-        case 'a' :
-        case 'A' :
-            printf("\n Ada");
-            break;
-        case 'b':
-        case 'B' :
-            printf("\n Basic");
-            break;
-        case 'c':
-        case 'C':
-            printf("\n COBOL");
-            break;
-        case 'd':
-        case 'D':
-            printf("\n dBASE III");
-            break;
-        case 'f':
-        case 'F':
-            printf("\n Fortran");
-            break;
-        case 'p':
-        case 'P':
-            printf("\n Pascal");
-            break;
-        case 'v':
-        case 'V':
-            printf("\n Visual C++");
-            break;
-        default :
-            printf("\n Ky tu khong nam trong danh sach liet ke");
-            break;
+    char subjects[][50] = {"Toan", "Van", "Ly", "Hoa", "Sinh"};
+    float grades[5];
+    float totalGrade = 0.0;
+    float averageGrade;
 
+    for (int i =0; i <5; i++){
+        printf("Nhap Diem cho mon %s: ", subjects[i]);
+        scanf("%f", &grades[i]);
+        totalGrade += grades[i];
     }
+    averageGrade = totalGrade / 5.0;
+
+    printf("\nDiem cua tung mon hoc:\n");
+    for(int i=0; i<5; i++){
+        printf("%s: %.2f\n", subjects[i], grades[i]);
+    }
+    printf("\nDiem trung binh: %.2f\n", averageGrade);
+    return 0;
 }
