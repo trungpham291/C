@@ -1,16 +1,31 @@
 #include <stdio.h>
 
-float tong(float a, float b);
-int main1()
-//int main()
+char xeploai(int mark);
+char xeploai(int mark)
 {
-    float r;
-    r = tong(3,4);
-    printf("%f", r);
+    char grade;
+    if (mark >= 90){
+        grade = 'A';
+    }else if(mark >= 80){
+        grade = 'B';
+    }else if(mark >= 70){
+        grade = 'C';
+    }else if(mark >= 60){
+        grade = 'D';
+    }else {
+        grade = 'E';
+    }
+    return grade;
 }
-float tong(float a, float b)
+
+int main()
 {
-    float c;
-    c= a + b;
-    return c;
+    int mark;
+    printf("Enter marks: ");
+    scanf("%d", &mark);
+
+    char grade = xeploai(mark);
+    printf("Grade: %c\n",grade);
+
+
 }
