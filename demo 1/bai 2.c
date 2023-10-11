@@ -15,8 +15,8 @@ float Total(int soluong, float dongia)
 }
 
 
-
-int main()
+int main2()
+//int main()
 {
     int soluong;
     float dongia;
